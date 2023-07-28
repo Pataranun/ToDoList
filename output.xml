@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.6.0 on win32)" generated="20230727 23:43:16.705" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase" source="C:\Users\tent_\Desktop\Sky\Project_Sky (Robot)\Todo List website\testcase.robot">
+<test id="s1-t1" name="Complete Task" line="6">
+<kw name="Open Browser by firefox" library="keyword">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://abhigyank.github.io/To-Do-List/</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230727 23:43:17.017" level="INFO">Opening browser 'firefox' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg timestamp="20230727 23:43:17.025" level="INFO">Firefox driver log is always forced to to: C:\Users\tent_\Desktop\Sky\Project_Sky (Robot)\Todo List website\geckodriver-21.log</msg>
+<status status="PASS" starttime="20230727 23:43:17.017" endtime="20230727 23:43:23.577"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:26.578" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:23.577" endtime="20230727 23:43:26.578"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:17.017" endtime="20230727 23:43:26.578"/>
+</kw>
+<kw name="Input Add Item COMPLETE" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[2]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:26.578" level="INFO">Clicking element 'xpath=/html/body/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20230727 23:43:26.578" endtime="20230727 23:43:26.839"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>new-task</arg>
+<arg>${Test_Complete}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:26.839" level="INFO">Typing text 'Test Complete' into text field 'new-task'.</msg>
+<status status="PASS" starttime="20230727 23:43:26.839" endtime="20230727 23:43:26.880"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:26.880" level="INFO">Clicking element 'xpath=/html/body/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20230727 23:43:26.880" endtime="20230727 23:43:27.114"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:29.128" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:27.114" endtime="20230727 23:43:29.128"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[1]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:29.129" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[2]'.</msg>
+<status status="PASS" starttime="20230727 23:43:29.129" endtime="20230727 23:43:29.364"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[3]/ul/li/label/span[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:29.364" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/ul/li/label/span[4]'.</msg>
+<status status="PASS" starttime="20230727 23:43:29.364" endtime="20230727 23:43:29.598"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:31.611" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:29.598" endtime="20230727 23:43:31.611"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:26.578" endtime="20230727 23:43:31.611"/>
+</kw>
+<kw name="Check COMPLETE" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[1]/a[3]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:31.611" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[3]/span'.</msg>
+<status status="PASS" starttime="20230727 23:43:31.611" endtime="20230727 23:43:31.853"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:36.855" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:31.853" endtime="20230727 23:43:36.855"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:31.611" endtime="20230727 23:43:36.855"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:17.017" endtime="20230727 23:43:36.855"/>
+</test>
+<test id="s1-t2" name="Delete Task" line="11">
+<kw name="Open Browser by firefox" library="keyword">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://abhigyank.github.io/To-Do-List/</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230727 23:43:36.855" level="INFO">Opening browser 'firefox' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg timestamp="20230727 23:43:36.863" level="INFO">Firefox driver log is always forced to to: C:\Users\tent_\Desktop\Sky\Project_Sky (Robot)\Todo List website\geckodriver-22.log</msg>
+<status status="PASS" starttime="20230727 23:43:36.855" endtime="20230727 23:43:43.165"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:46.176" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:43.165" endtime="20230727 23:43:46.176"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:36.855" endtime="20230727 23:43:46.176"/>
+</kw>
+<kw name="Input Add Item DELETE" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[2]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:46.176" level="INFO">Clicking element 'xpath=/html/body/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20230727 23:43:46.176" endtime="20230727 23:43:46.436"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>new-task</arg>
+<arg>${Test_Delete}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:46.436" level="INFO">Typing text 'Test Delete' into text field 'new-task'.</msg>
+<status status="PASS" starttime="20230727 23:43:46.436" endtime="20230727 23:43:46.476"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:46.476" level="INFO">Clicking element 'xpath=/html/body/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20230727 23:43:46.476" endtime="20230727 23:43:46.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:48.713" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:46.711" endtime="20230727 23:43:48.713"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[1]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:48.713" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[2]'.</msg>
+<status status="PASS" starttime="20230727 23:43:48.713" endtime="20230727 23:43:48.947"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[3]/ul/li/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:48.951" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/ul/li/button/span'.</msg>
+<status status="PASS" starttime="20230727 23:43:48.951" endtime="20230727 23:43:49.189"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:51.200" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:49.189" endtime="20230727 23:43:51.201"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:46.176" endtime="20230727 23:43:51.201"/>
+</kw>
+<kw name="Check COMPLETE" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=/html/body/div/div/div[1]/a[3]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230727 23:43:51.201" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[3]/span'.</msg>
+<status status="PASS" starttime="20230727 23:43:51.201" endtime="20230727 23:43:51.436"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 23:43:56.452" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230727 23:43:51.436" endtime="20230727 23:43:56.452"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:51.201" endtime="20230727 23:43:56.452"/>
+</kw>
+<status status="PASS" starttime="20230727 23:43:36.855" endtime="20230727 23:43:56.452"/>
+</test>
+<status status="PASS" starttime="20230727 23:43:16.705" endtime="20230727 23:43:56.452"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
